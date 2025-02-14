@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+<%- include("./partials/head") %>
+
+  <body id="body">
+    <%- include("./partials/header") %>
+
+
+  
+   
+<style>
+    .float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0015ffbf;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    z-index: 100000 !important;
+}
+
+.float-button:hover {
+    background-color: #00b303d3;
+}
+
+</style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('floatButton');
+    let isAtBottom = false;
+
+    button.addEventListener('click', () => {
+        if (isAtBottom) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            button.textContent = '⬇';
+        } else {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+            button.textContent = '⬆';
+        }
+        isAtBottom = !isAtBottom;
+    });
+});
+    </script>
+
+
+
+
+   <center  class="noprinted nonprint" > <button onclick="printPage()"   >Print</button>
+    <button id="floatButton" class="float-button" >⬇</button>
+   <button  class="noprinted" ><a href="/add-new-article"> Add new article </a></button>
+
+    
+    <button onclick="hiiden()">Hided</button>
+    <button onclick="hiheTheFixedtable()">hihe The Fixedtable</button>
+    <button ><a target="_blank" href="https://smallpdf.com/pdf-to-jpg">PDF TO IMG</a></button>
+    
+  </center>
+    
+
+    <section  class="parent forteIidex " style="margin-top: 0px; z-index: 2;  " >
+      <div class="child2"><br>
+       <center> <br> <img  class="brdlogo" style="width: 70%; height: 110px; background-color: rgba(255, 255, 255, 0.864);" src="/logo.png" alt=""> </center>
+       <br>
+<center  style="color: rgb(207, 207, 207); font-size: 70px;"  class="white-text-with-blue-shadow"><strong> CAHIER DE TEXTES</strong></center>
+
+<center  class="white-text-with-blue-shadow"  
+style="color: rgb(255, 255, 255); font-size: 40px;">
+<strong> 2 APIC / 1 APIC </strong></center>
+
+<center class="white-text-with-blue-shadow"  style=" font-size: 40px;"> <strong>
+  Sciences de la Vie et de la Terre</strong></center>
+
+
+
+
+
+
+<center  class="white-text-with-blue-shadow"  style="color:  red;  font-size: 40px;  ">
+  <strong >
+   <span style="color:rgb(207, 207, 207)">Professeur:</span> Ali bassi
+    </strong>
+</center>
+      </div>
+      <center class="child1" style="margin-top: 10px; "><img style="width: 94%; height: 1170px; margin-top: 0px; z-index: 10000 !important;" src="/cover.png" alt=""></center>
+      
+    </section>
+   
+    <br>
+    <section  class="parent forteIidex " style="margin-top: 0px; z-index: 2;  " >
+      <div class="child2"><br>
+        <div>
+
+
+          <br>
+        
+        <center  class="white-text-with-blue-shadow"  style="color:  red;  font-size: 40px;  ">
+          <strong >
+            Informations générales:
+            </strong>
+        </center>
+        <br><br><br><br>
+        
+        <table>
+          <tr>
+            <td style="background-color: rgba(125, 98, 234, 0.352);">
+              <center    style="color:  green;  font-size: 30px;  ">
+                <strong >
+                  Collège 
+                
+                  </strong>
+              </center>
+            </td>
+          </tr>
+        
+          <tr>
+            <td style="background-color: rgba(226, 255, 4, 0.36);">
+              <center    style="color:  black;  font-size: 24px;  ">
+              
+                 
+                  Ennakhil - Taghjijt
+                 
+              </center>
+            </td>
+          </tr>
+        </table>
+        <br><br><br><br>
+        <table style="text-align: center; width: 70%;">
+          <tbody><tr style="background-color: rgba(125, 98, 234, 0.352);">
+            <th colspan="2" style="color:  green;  font-size: 20px;  ">الأقسام المسندة</th> 
+          </tr>
+        <tr style="color:  black;  font-size: 18px; background-color: rgba(226, 255, 4, 0.36); ">
+          <td>1APIC1 / 1APIC2 / 1APIC3  / 1APIC4  / 1APIC5</td> 
+          <td> 2APIC2 / 2APIC3  / 2APIC4  / 2APIC5</td>  
+        </tr>
+        </tbody></table>
+        
+        
+        <br><br><br><br>
+        
+        
+        
+        <table  style="text-align: center; width: fit-content; margin: auto; zoom: 0.6;">
+        
+        
+          <tr>
+            <th class="tblcoine" rowspan="2"></th>
+            
+              <th colspan="9"   style="color:  green;  font-size: 24px; background-color: rgba(125, 98, 234, 0.352); ">جدول الحصص</th>
+        
+          </tr>
+        
+        
+        
+        
+        <tr>
+         
+          <td class="color1">8-9</td>
+          <td class="color1">9-10</td>
+          <td class="color2">10-11</td>
+          <td class="color2">11-12</td>
+          <td rowspan="7" class="color0" style="width: 3px; padding: 0px; background-color: black;"></td>
+          <td class="color3">14-15</td>
+          <td class="color3">15-16</td>
+          <td class="color4">16-17</td>
+          <td class="color4">17-18</td>
+        </tr>
+        
+        <tr>
+        <th  class="color1">Lundi</th>
+        <td colspan="2" class="color2">2APIC-3</td>
+        
+        <td colspan="2" class="color1">1APIC-1</td>
+        <td class="color4"></td>
+        <td class="color4"></td>
+        <td class="color3"></td>
+        <td class="color3"></td>
+
+        
+        </tr>
+        
+        <tr>
+        <th  class="color4">Mardi</th>
+        <td class="color1"></td>
+        <td class="color1"></td>
+        <td class="color2"></td>
+        <td class="color2"></td>
+        
+        <td colspan="2" class="color2">1APIC-2</td>
+        
+        <td colspan="2" class="color1">2APIC-4</td>
+        </tr>
+        
+        
+        <tr>
+          <th  class="color4">Mercredi</th>
+          <td class="color1" colspan="2">2APIC2</td>
+         
+          <td class="color2" colspan="2">2APIC5</td>
+         
+          <td class="color3" colspan="4"> الأنشطة الموازية</td>
+          </tr>
+        
+        
+        
+        
+        <tr>
+          <th  class="color1">Jeudi</th>
+          <td colspan="2" class="color2">1APIC 4</td>
+         
+          <td colspan="2" class="color1">1APIC 5</td>
+          <td class="color4"></td>
+          <td class="color4"></td>
+          <td class="color3"></td>
+          <td class="color3"></td>
+
+        
+          </tr>
+        
+        <tr>
+        <th  class="color4"> Vendredi</th>
+        <td class="color1" colspan="2"></td>
+      
+        <td class="color2"  colspan="2">1APIC3</td>
+  
+        <td class="color3" colspan="4"> الأنشطة الموازية</td>
+
+        </tr>
+        
+        
+        
+        
+        <tr>
+          <th  class="color1">Samedi</th>
+          <td class="color4"></td>
+          <td class="color4"></td>
+          <td class="color3"></td>
+          <td class="color3"></td>
+          <td class="color2"></td>
+          <td class="color2"></td>
+          <td class="color1"></td>
+          <td class="color1"></td>
+          </tr>
+        
+        
+        
+        
+        
+        
+        </table>
+        
+        
+        
+        
+        <br><br><br><br>
+        <center style="border: solid 2px rgb(144, 0, 255); width: fit-content; padding: 8px; margin: auto; background-color: rgba(140, 0, 255, 0.231);">
+         <strong style="zoom: O.9; color: red;">
+          Consulter la dernière mise à jour ici.
+        </strong>
+<br>
+          <img style="width: 200px; height: 200px; margin-top: 0px; z-index: 10000 !important;" src="/QrUrl.PNG" alt="">
+        
+        <div style="zoom: O.3; color: red; background-color: white;">
+          Remarque : Lors de l'ouverture du lien <br>
+          dans le navigateur, cela prendra environ <br>
+          une demi-minute pour recevoir les informations.
+        </div>
+      </center>
+        </div>
+      </div>
+      <center class="child1" style="margin-top: 10px; "><img style="width: 94%; height: 1140px; margin-top: 0px; z-index: 10000 !important;" src="/covver.png" alt=""></center>
+      
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section style="all: unset; padding: 4px;" >
+      
+
+
+
+
+
+
+      
+
+     
+
+      <div style="all: unset; margin: auto; margin-left: 12px; margin-right: 12px;">
+        <% arrArticle.forEach((item, index) => { %>
+
+          <a 
+            style="all: unset; margin-left: auto; margin-right: auto; margin: 12px; cursor: pointer;"
+            href="/all-articles/<%= item._id %>"
+          >
+         
+           <table style="border: transparent 10px solid;" border="0">
+            <tr>
+              <td style="border: transparent 10px solid; text-align: center; width: 2px; padding: 0px; background-color: rgba(0, 255, 30, 0.171); zoom: 0.5;" class="rotingMedia"> <strong><%- index + 1 %></strong></td>
+          
+              <td style="border: transparent 10px solid; width: 100%; padding: 0px;" ><%-  item.body %></td>
+            </tr>
+           </table>
+
+          </a>
+        <% }); %>
+      </div>
+      
+        
+  
+     
+    </section>
+  
+
+
+
+
+
+
+ 
+
+
+
+
+   
+
+    
+
+
+
+
+    
+  <!-- Fixed table at the end of each page -->
+  <section class="fixed-table" id="fixedtable" >
+    
+    <table align="center" style="z-index: -1 !important;">
+      <tr>
+        <th>
+          Remarques de Mr. inspecteur
+        </th>
+        <th>
+          Remarques de Mr. directeur
+        </th>
+
+      </tr>
+
+      <tr>
+        <td>
+<br><br><br><br>
+        </td>
+        <td>
+         
+        </td>
+
+      </tr>
+
+
+    </table>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function printPage() {
+        // Get the HTML content of the page
+        const htmlContent = document.documentElement.outerHTML;
+  
+        // Get the CSS stylesheets
+        const stylesheets = Array.from(document.querySelectorAll("link[rel='stylesheet']"))
+          .map(link => link.href);
+  
+        // Send a POST request to the server to generate and download the PDF
+        fetch(`/download-pdf`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ html: htmlContent, stylesheets })
+        })
+          .then(response => {
+            if (response.ok) {
+              return response.blob();
+            } else {
+              throw new Error("Network response was not ok");
+            }
+          })
+          .then(blob => {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "output.pdf";
+            a.click();
+          })
+          .catch(error => {
+            console.error("Error generating PDF:", error);
+          });
+      }
+    </script>
+
+
+
+<script>
+  document.getElementById("fixedtable").style.display = "none";
+ function   hiiden() {
+  
+  document.getElementById("fixedtable").style.display = "";
+
+  
+  var elements = document.getElementsByClassName("noprinted");
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (element.style.display === "none") {
+      element.style.display = "block"; // Show the element if it's currently hidden
+    } else {
+      element.style.display = "none"; // Hide the element if it's currently visible
+    }
+  }
+};
+
+
+
+
+function hiheTheFixedtable() {
+  document.getElementById("fixedtable").style.display = "none";
+
+
+  var elements = document.getElementsByClassName("noprinted");
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    if (element.style.display === "none") {
+      element.style.display = "block"; // Show the element if it's currently hidden
+    } else {
+      element.style.display = "none"; // Hide the element if it's currently visible
+    }
+  }
+
+
+
+
+    // Select all elements with the class name 'forteIidex'
+    const elements0 = document.querySelectorAll('.forteIidex');
+
+    // Loop through each element and set its z-index to 99999
+    elements0.forEach(element => {
+        // Check if the element is not the fixed element
+        if (!element.classList.contains('fixed-element')) {
+            element.style.zIndex = '99999';
+        }
+    });
+}
+
+
+
+
+
+
+</script>
+
+
+
+  </body>
+</html>
